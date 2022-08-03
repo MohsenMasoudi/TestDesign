@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/home_fragment_gradient_top_color"
+            android:fitsSystemWindows="true"
+            android:paddingTop="0dp"
+            app:layout_insetEdge="top">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                app:toolbarId="@+id/toolbar">
+
+<!--                <androidx.appcompat.widget.Toolbar-->
+<!--                    android:id="@+id/toolbar"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="?attr/actionBarSize"-->
+<!--                    app:layout_collapseMode="pin" />-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="149dp"
+                    app:layout_collapseMode="parallax">
+
+                    <View
+                        android:layout_width="104dp"
+                        android:layout_height="110dp"
+                        android:background="@drawable/image_home_fragment_top_left"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtToolbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="64dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/hello_omid_mahmoudi"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgSettings"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="19dp"
+                        android:src="@drawable/ic_settings"
+                        app:layout_constraintBottom_toBottomOf="@id/txtToolbar"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/txtToolbar" />
+
+                    <View
+                        android:layout_width="104dp"
+                        android:layout_height="110dp"
+                        android:layout_marginTop="44dp"
+                        android:background="@drawable/image_home_fragment_bottom_right"
+                        android:rotation="180"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fillViewport="true"
+               >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginTop="42dp"
+                        app:cardBackgroundColor="@color/transparentColor"
+                        app:cardElevation="0dp"
+                        app:cardCornerRadius="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/pinkColor" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_gravity="bottom"
+                            android:elevation="0dp"
+                            android:background="@drawable/rounded_20dp_app_background" />
+
+
+                        <androidx.viewpager2.widget.ViewPager2
+                            android:id="@+id/viewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:nestedScrollingEnabled="false"
+                            android:layout_gravity="top" />
+
+                        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                            android:id="@+id/dots_indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:dotsColor="@color/blue_alpha_30"
+                            app:dotsSize="5dp"
+                            app:dotsSpacing="3dp"
+                            app:dotsWidthFactor="1"
+                            app:selectedDotColor="@color/colorAccent"
+                            app:progressMode="false"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginBottom="38dp"
+                            android:layout_marginEnd="8dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/AppFontSemiBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:paddingBottom="8dp"
+                            android:text="@string/view_more"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingHorizontal="22dp"
+                android:paddingVertical="8dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtRehber"
+                    style="@style/AppFontSemiBold"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/rounded_10dp_white"
+                    android:drawableStart="@drawable/ic_rehber"
+                    android:drawablePadding="12dp"
+                    android:padding="14dp"
+                    android:text="@string/rehber"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txt_sektorum_is"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_sektorum_is"
+                    style="@style/AppFontSemiBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/rounded_10dp_white"
+                    android:drawableTop="@drawable/ic_sektrum_is_drawable"
+                    android:drawablePadding="16dp"
+                    android:gravity="center"
+                    android:padding="14dp"
+                    android:text="@string/sektorum_is"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toStartOf="@id/txtRehber"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtEmlak"
+                    style="@style/AppFontSemiBold"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_10dp_white"
+                    android:drawableStart="@drawable/ic_emlak"
+                    android:drawablePadding="12dp"
+                    android:padding="14dp"
+                    android:text="@string/emlak"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="@id/txtRehber"
+                    app:layout_constraintStart_toStartOf="@id/txtRehber"
+                    app:layout_constraintTop_toBottomOf="@id/txtRehber" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_sektorum_pazar"
+                    style="@style/AppFontSemiBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_10dp_white"
+                    android:drawableTop="@drawable/ic_sektrum_pazar_drawable"
+                    android:drawablePadding="16dp"
+                    android:gravity="center"
+                    android:padding="14dp"
+                    android:text="@string/sektorum_pazar"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="@id/txtRehber"
+                    app:layout_constraintStart_toStartOf="@id/txtRehber"
+                    app:layout_constraintTop_toBottomOf="@id/txtEmlak" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtIhracat"
+                    style="@style/AppFontSemiBold"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_10dp_white"
+                    android:drawableStart="@drawable/ic_ihracat"
+                    android:drawablePadding="12dp"
+                    android:padding="14dp"
+                    android:text="@string/ihracat"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="@id/txt_sektorum_is"
+                    app:layout_constraintStart_toStartOf="@id/txt_sektorum_is"
+                    app:layout_constraintTop_toBottomOf="@id/txt_sektorum_is" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtMagazin"
+                    style="@style/AppFontSemiBold"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_10dp_white"
+                    android:drawableStart="@drawable/ic_magazin"
+                    android:drawablePadding="12dp"
+                    android:padding="14dp"
+                    android:text="@string/magazin"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="@id/txt_sektorum_is"
+                    app:layout_constraintStart_toStartOf="@id/txt_sektorum_is"
+                    app:layout_constraintTop_toBottomOf="@id/txtIhracat" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/viewExtra"
+            app:layout_anchor="@id/app_bar"
+            app:layout_anchorGravity="bottom|start">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:elevation="0dp"
+                android:background="@color/applicationBackgroundColor" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/txtMoneyType"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/rounded_10dp_except_bottom_left_white"
+            android:orientation="horizontal"
+            app:layout_anchor="@id/app_bar"
+            app:layout_anchorGravity="bottom|center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/AppFontSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/gold"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/AppFontMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sample_price"
+                    android:textColor="@color/lightGray2"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:background="@color/separator_line_color" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/AppFontSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/usdt"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/AppFontMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sample_price"
+                    android:textColor="@color/lightGray2"
+
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:background="@color/separator_line_color" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/AppFontSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/ons"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/AppFontMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sample_price"
+                    android:textColor="@color/lightGray2"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:background="@color/separator_line_color" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/AppFontSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/eur"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/AppFontMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sample_price"
+                    android:textColor="@color/lightGray2"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:background="@color/separator_line_color" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/AppFontSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/btc"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/AppFontMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sample_price"
+                    android:textColor="@color/lightGray2"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewSponser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/rounded_bottom_white"
+            android:orientation="horizontal"
+            android:paddingVertical="4dp"
+            app:layout_anchor="@id/txtMoneyType"
+            app:layout_anchorGravity="bottom|start">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/AppFontLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/sponsored_by_haremaltin"
+                android:textColor="@color/lightGray"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/ic_sponser_logo" />
+        </LinearLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

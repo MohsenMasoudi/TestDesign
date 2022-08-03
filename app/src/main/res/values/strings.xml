@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">TestDesign</string>
+    <string name="profile">Profile</string>
+    <string name="notification">Notification</string>
+    <string name="category">Category</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="app_font_bold">fonts/gilroy_bold.ttf</string>
+    <string name="app_font_light">fonts/gilroy_light.ttf</string>
+    <string name="app_font_medium">fonts/gilroy_medium.ttf</string>
+    <string name="app_font_semi_bold">fonts/gilroy_semi_bold.ttf</string>
+    <string name="hello_omid_mahmoudi">Hello Omid Mahmoudi !</string>
+    <string name="rehber">Rehber</string>
+    <string name="sektorum_is">Sektorum İş</string>
+    <string name="emlak">Emlak</string>
+    <string name="sektorum_pazar">Sektorum Pazar</string>
+    <string name="ihracat">Ihracat</string>
+    <string name="magazin">Magazin</string>
+    <string name="gold">Gold</string>
+    <string name="sample_price">1,026 TL</string>
+    <string name="usdt">USDT</string>
+    <string name="ons">ONS</string>
+    <string name="eur">EUR</string>
+    <string name="btc">BTC</string>
+    <string name="sponsored_by_haremaltin">Sponsored by Haremaltin</string>
+    <string name="utechia_gallery">Utechia Gallery</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie risus vitae, ornare eros</string>
+    <string name="view_more">View More</string>
+
+</resources>

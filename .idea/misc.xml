@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.16696642685851318" />
+        <entry key="app/src/main/res/drawable-v24/bottom_navigation_selector.xml" value="0.189" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.249" />
+        <entry key="app/src/main/res/drawable/bottom_navigation_background.xml" value="0.249" />
+        <entry key="app/src/main/res/drawable/bottom_navigation_selector.xml" value="0.2965" />
+        <entry key="app/src/main/res/drawable/gradient_top_background_color.xml" value="0.2965" />
+        <entry key="app/src/main/res/drawable/home_fragment_gradient_top_color.xml" value="0.249" />
+        <entry key="app/src/main/res/drawable/home_fragment_top_left_shap.xml" value="0.246" />
+        <entry key="app/src/main/res/drawable/home_fragment_top_left_shape.xml" value="0.249" />
+        <entry key="app/src/main/res/drawable/home_fragment_top_left_shape2.xml" value="0.249" />
+        <entry key="app/src/main/res/drawable/ic_category.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/ic_emlak.xml" value="0.2415" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/ic_ihracat.xml" value="0.2415" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2965" />
+        <entry key="app/src/main/res/drawable/ic_magazin.xml" value="0.2415" />
+        <entry key="app/src/main/res/drawable/ic_notification.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/ic_rehber.xml" value="0.2415" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/ic_sektrum_is.xml" value="0.2415" />
+        <entry key="app/src/main/res/drawable/ic_sektrum_pazar.xml" value="0.2415" />
+        <entry key="app/src/main/res/drawable/ic_sektrum_pazar_drawable.xml" value="0.249" />
+        <entry key="app/src/main/res/drawable/ic_settings.xml" value="0.246" />
+        <entry key="app/src/main/res/drawable/image_bottom_navigation_background.xml" value="0.2415" />
+        <entry key="app/src/main/res/drawable/rectangle_39494.xml" value="0.2415" />
+        <entry key="app/src/main/res/drawable/rounded_10dp_except_bottom_left_white.xml" value="0.249" />
+        <entry key="app/src/main/res/drawable/rounded_10dp_white.xml" value="0.249" />
+        <entry key="app/src/main/res/drawable/rounded_10dp_with.xml" value="0.249" />
+        <entry key="app/src/main/res/drawable/rounded_20dp_background.xml" value="0.249" />
+        <entry key="app/src/main/res/drawable/rounded_20dp_transparent.xml" value="0.249" />
+        <entry key="app/src/main/res/drawable/rounded_20dp_white.xml" value="0.249" />
+        <entry key="app/src/main/res/drawable/rounded_bottom_white.xml" value="0.249" />
+        <entry key="app/src/main/res/drawable/sektrum_is_drawable.xml" value="0.249" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33489583333333334" />
+        <entry key="app/src/main/res/layout/fragment_category.xml" value="0.33489583333333334" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.48382242287434163" />
+        <entry key="app/src/main/res/layout/fragment_home_slider.xml" value="0.6536731634182908" />
+        <entry key="app/src/main/res/layout/fragment_notification.xml" value="0.33489583333333334" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.33489583333333334" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.33489583333333334" />
+        <entry key="app/src/main/res/layout/fragment_slider.xml" value="0.33489583333333334" />
+        <entry key="app/src/main/res/menu/bottom_navigation_items.xml" value="0.33489583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

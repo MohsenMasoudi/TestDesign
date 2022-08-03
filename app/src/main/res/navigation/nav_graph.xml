@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mohsen.testdesign.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.mohsen.testdesign.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.mohsen.testdesign.notification.NotificationFragment"
+        android:label="NotificationDestination"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.mohsen.testdesign.category.CategoryFragment"
+        android:label="CategoryFragment"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.mohsen.testdesign.search.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search" />
+</navigation>

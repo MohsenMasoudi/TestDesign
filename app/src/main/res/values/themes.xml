@@ -1,0 +1,59 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@color/transparentColor</item>
+        <item name="android:windowFullscreen">true</item>
+
+
+
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="backgroundColor">@color/applicationBackgroundColor</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="fontPath">@string/app_font_medium</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppFontBold">
+        <item name="fontPath">@string/app_font_bold</item>
+    </style>
+
+    <style name="AppFontMedium">
+        <item name="fontPath">@string/app_font_medium</item>
+    </style>
+
+    <style name="AppFontSemiBold">
+        <item name="fontPath">@string/app_font_semi_bold</item>
+    </style>
+
+    <style name="AppFontLight">
+        <item name="fontPath">@string/app_font_light</item>
+    </style>
+
+    <style name="BottomMenuTextAppearanceActive">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="BottomMenuTextAppearance">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@string/app_font_bold</item>
+    </style>
+    <style name="Theme.MyApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MyApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
